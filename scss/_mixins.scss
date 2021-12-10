@@ -1,0 +1,4 @@
+﻿@use "custom" as *;
+@mixin bggrad {
+    background: linear-gradient(to right, rgba($virgil, 0.75), rgba($virgil, 0.75));
+}

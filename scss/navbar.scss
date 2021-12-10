@@ -1,0 +1,82 @@
+﻿@use "custom" as *;
+@use "mixins" as *;
+
+.menu {
+    @include bggrad;
+
+    li {
+        padding: 0 0.7rem;
+
+        a {
+            color: #fff !important;
+            text-transform: capitalize !important;
+            font-weight: 800;
+        }
+    }
+}
+.companyname{
+    color:#fff !important;
+    font-size: x-large;
+    font-weight:900;
+}
+body{
+    margin-top:1.51em;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    background-color: rgba($virgil, 0.1);
+}
+.btn-rounded {
+    position: relative;
+    padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+    border: 0.1rem solid rgba(#fff, 0.6);
+    background-color: white;
+
+    span {
+        position: absolute;
+        background-color: $virgil;
+        width: 2.5rem;
+        height: 2.5rem;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+
+    i {
+        color: #fff;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+}
+
+.btn-rounded:hover {
+    background: linear-gradient(to right, rgba($virgil, 0.55), rgba($virgil, 0.55));
+    color: #fff;
+
+    span {
+        background-color: rgba(black, 0.5);
+    }
+}
+.notice {
+    background-color: black;
+    opacity:0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: white;
+    text-align: center;
+    height: 1.5em;
+}
+.first-center{
+    h1{
+        font-weight:600;
+        color:rgba($virgil, 0.8) !important;
+    }
+}
+.second-center{
+    @include bggrad;
+    color:#fff !important;
+}
